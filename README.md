@@ -10,3 +10,6 @@ Code for playing Podcast in Python  (Example from Tony Evans Podcast)
 >>> command = text[startmp3:endmp3]
 >>> command
 'http://www.oneplace.com/ministries/the-alternative/subscribe/podcast/fasting-for-marriage-702578.mp3'
+p = subprocess.Popen(["/usr/bin/cvlc",command],stdin=subprocess.PIPE,stdout=subprocess.PIPE)
+pkill = subprocess.Popen(["/usr/bin/pkill","vlc"],stdin=subprocess.PIPE
+p.kill()
